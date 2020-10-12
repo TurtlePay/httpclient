@@ -1,0 +1,53 @@
+{
+  "name": "@turtlepay/httpclient",
+  "version": "0.0.1",
+  "description": "TurtlePay HTTP/S Helper Library",
+  "main": "dist/HTTPClient.js",
+  "types": "dist/HTTPClient.d.ts",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "docs": "./node_modules/.bin/typedoc && touch docs/.nojekyll && git restore docs/CNAME",
+    "test": "yarn style",
+    "style": "./node_modules/.bin/eslint src/**/*.ts",
+    "fix-style": "./node_modules/.bin/eslint --fix src/**/*.ts",
+    "prepublishOnly": "yarn build"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turtlepay/httpclient.git"
+  },
+  "keywords": [
+    "TurtlePay",
+    "HTTP",
+    "HTTPS",
+    "SSL",
+    "Helper"
+  ],
+  "author": "The TurtlePay Developers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turtlepay/httpclient/issues"
+  },
+  "homepage": "https://github.com/turtlepay/httpclient#readme",
+  "devDependencies": {
+    "@types/node": "^14.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "typedoc": "^0.19.2",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.5.7",
+    "abort-controller": "^3.0.0",
+    "node-fetch": "^2.6.1"
+  }
+}
