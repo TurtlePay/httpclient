@@ -1,6 +1,6 @@
 {
   "name": "@turtlepay/httpclient",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TurtlePay HTTP/S Helper Library",
   "main": "dist/HTTPClient.js",
   "types": "dist/HTTPClient.d.ts",
